@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="sound"
+        android:title="Sound"
+        android:icon="@drawable/sound"
+        android:defaultValue="true"
+        android:summary="Turn the sound on or off" />
+    <EditTextPreference
+        android:key="victory_message"
+        android:icon="@drawable/winmes"
+        android:summary=""
+        android:defaultValue="@string/result_human_wins"
+        android:title="Victory message" />
+    <ListPreference
+        android:key="difficulty_level"
+        android:title="Difficulty level"
+        android:icon="@drawable/levels"
+        android:summary=""
+        android:defaultValue="@string/difficulty_expert"
+        android:entries="@array/list_difficulty_level"
+        android:entryValues="@array/list_difficulty_level" />
+    <Preference
+        android:key="board_color"
+        android:title="Board Color"
+        android:icon="@drawable/color"
+        android:summary="@string/select_color"
+        />
+    <Preference
+        android:key="reset_conf"
+        android:title="Reset"
+        android:icon="@drawable/reset"
+        android:summary="@string/reset_conf"
+        />
+
+
+
+</PreferenceScreen>
