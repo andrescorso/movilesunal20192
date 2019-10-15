@@ -5,6 +5,7 @@
     <string name="first_computer">Android\'s begun. It\'s your turn.</string>
     <string name="turn_human">Your turn.</string>
     <string name="turn_computer">Android\'s turn.</string>
+    <string name="turn_other">Player 2\'s turn.</string>
     <string name="result_tie">It\'s a tie.</string>
     <string name="result_human_wins">You won!</string>
     <string name="result_computer_wins">Android won!</string>
@@ -18,6 +19,7 @@
     <string name="quit_question">Are you sure you want to quit?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="cancel">Cancel</string>
     <string name="ok">OK</string>
     <string name="about_message">Choose from one of three difficulty levels.</string>
     <string name="about_warning">Don\'t let the Android beat you.</string>
@@ -26,4 +28,6 @@
     <string name="sound_off">Sound: off</string>
     <string name="select_color">Choose a color and press the center</string>
     <string name="reset_conf">Restart configurations</string>
+    <string name="wait_player">Waiting for another player...</string>
+    <string name="choose_player">Choose one game:</string>
 </resources>
