@@ -223,6 +223,7 @@ public class AndroidTicTacToeActivity extends Activity {
 
     private class  ButtonNewGame implements View.OnClickListener{
         public void onClick(View view){
+            onlineGame =false;
             startNewGame();
         }
     }
@@ -322,7 +323,9 @@ public class AndroidTicTacToeActivity extends Activity {
         mScoreTTextView.setText(String.valueOf(scores[1]));
         mScoreCTextView.setText(String.valueOf(scores[2]));
         gameover = true;
-        mDatabaseGame.removeEventListener(mFirebaseListener);
+        if (mDatabaseGame != null) {
+            mDatabaseGame.removeEventListener(mFirebaseListener);
+        }
 
     }
     private boolean setMove(char player, int location) {
@@ -467,7 +470,7 @@ public class AndroidTicTacToeActivity extends Activity {
                         getResources().getString(R.string.difficulty_easy),
                         getResources().getString(R.string.difficulty_harder),
                         getResources().getString(R.string.difficulty_expert)};
-// TODO: Set selected, an integer (0 to n-1), for the Difficulty dialog.
+
 // selected is the radio button that should be selected.
                 int selected = mGame.getDifficultyLevel().ordinal();
 
@@ -475,7 +478,7 @@ public class AndroidTicTacToeActivity extends Activity {
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int item) {
                                 dialog.dismiss(); // Close dialog
-// TODO: Set the diff level of mGame based on which item was selected.
+
                                 mGame.setDifficultyLevel(TicTacToeGame.DifficultyLevel.valueOf((String) levels[item]));
 // Display the selected difficulty level
                                 //Toast.makeText(getApplicationContext(), levels[item],
@@ -757,7 +760,7 @@ public class AndroidTicTacToeActivity extends Activity {
         //Log.d("check", "HUMANSTART:"+humanstart);
         if (!humanstart) {
             mInfoTextView.setTypeface(null, Typeface.NORMAL);
-            mInfoTextView.setText(R.string.turn_computer);
+            mInfoTextView.setText(R.string.first_other);
             humanturn = false;
         }else {
             humanturn = true;

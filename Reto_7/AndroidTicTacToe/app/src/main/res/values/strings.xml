@@ -3,6 +3,7 @@
 
     <string name="first_human">You go first.</string>
     <string name="first_computer">Android\'s begun. It\'s your turn.</string>
+    <string name="first_other">Player 2 starts.</string>
     <string name="turn_human">Your turn.</string>
     <string name="turn_computer">Android\'s turn.</string>
     <string name="turn_other">Player 2\'s turn.</string>
