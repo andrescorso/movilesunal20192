@@ -6,7 +6,12 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -20,8 +25,11 @@ import android.view.Menu;
 
 import co.dadm.directorio.data.EmpresasContract;
 import co.dadm.directorio.data.EmpresasDbHelper;
+import co.dadm.directorio.ui.share.UpdateFormFragment;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener, OnFragmentInteractionListener {
+
 
     private AppBarConfiguration mAppBarConfiguration;
     @Override
@@ -46,32 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         EmpresasDbHelper dbHelper = new EmpresasDbHelper(this);
 
-        Cursor c = dbHelper.getReadableDatabase().query(
-                EmpresasContract.EmpresasTable.TABLE_NAME,
-                null,
-                null,
-                null,
-                null,
-                null,
-                null
-        );
 
-        //Nos aseguramos de que existe al menos un registro
-        if (c.moveToFirst()) {
-            //Recorremos el cursor hasta que no haya más registros
-            do {
-                String codigo= c.getString(0);
-                String nombre = c.getString(1);
-                String url = c.getString(2);
-                String telefono = c.getString(3);
-                String email = c.getString(4);
-                String prodyserv = c.getString(5);
-                int consultoria = c.getInt(6);
-                int desarrollo = c.getInt(7);
-                int fabrica = c.getInt(8);
-                Log.i("SQL", String.valueOf(codigo+"-"+nombre+"-"+url+"-"+telefono+"-"+email+"-"+prodyserv+"-"+consultoria+"-"+desarrollo+"-"+fabrica));
-            } while(c.moveToNext());
-        }
     }
 
     @Override
@@ -86,5 +69,23 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    @Override
+    public void changeFragment(int id){
+        if (id == 2) {
+
+            Fragment fragment = new UpdateFormFragment();
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+
+            ft.replace(R.id.nav_host_fragment, fragment);
+            ft.commit();
+        }
+
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        return false;
     }
 }

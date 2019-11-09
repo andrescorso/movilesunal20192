@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/createtv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dip"
+        android:textStyle="bold"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        android:text="Creación de Empresa"
+        android:layout_marginStart="20sp" />
+
+    <TextView
+        android:id="@+id/nombretv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/createtv"
+        android:text="Empresa:"
+        android:layout_marginStart="20sp" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombretv"
+        android:layout_marginStart="20sp"
+        />
+
+    <TextView
+        android:id="@+id/urltv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="URL:"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        android:layout_marginStart="20sp"
+         />
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:text=""
+        android:layout_marginStart="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/urltv"/>
+    <TextView
+        android:id="@+id/telefonotv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginStart="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:text="Teléfono:"
+        app:layout_constraintTop_toBottomOf="@+id/url"/>
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_marginLeft="20sp"
+        android:layout_marginStart="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/telefonotv"/>
+    <TextView
+        android:id="@+id/emailtv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginStart="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:text="Email:"
+        app:layout_constraintTop_toBottomOf="@+id/telefono"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginStart="20sp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/emailtv"/>
+    <TextView
+        android:id="@+id/prodyservtv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginStart="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:text="Productos y Servicios"
+        app:layout_constraintTop_toBottomOf="@+id/email"/>
+    <EditText
+        android:id="@+id/prodyserv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginStart="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:text=""
+        app:layout_constraintTop_toBottomOf="@+id/prodyservtv"/>
+    <TextView
+        android:id="@+id/clasificaciontv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginStart="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:text="Clasificación"
+        app:layout_constraintTop_toBottomOf="@+id/prodyserv"/>
+    <CheckBox
+        android:id="@+id/consultioria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginStart="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:text="Consultoría"
+        app:layout_constraintTop_toBottomOf="@+id/clasificaciontv"/>
+    <CheckBox
+        android:id="@+id/desarrollo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginStart="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:text="Desarrollo a la medida"
+        app:layout_constraintTop_toBottomOf="@+id/consultioria"/>
+    <CheckBox
+        android:id="@+id/fabrica"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginStart="20sp"
+        app:layout_constraintLeft_toRightOf="parent"
+        android:text="Fábrica de software"
+        app:layout_constraintTop_toBottomOf="@+id/desarrollo"/>
+
+    <Button
+        android:id="@+id/buttoncreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CREAR"
+        app:layout_constraintTop_toBottomOf="@+id/consultioria"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="30sp"
+        android:layout_marginRight="30sp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

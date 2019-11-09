@@ -13,25 +13,25 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="co.dadm.directorio.ui.gallery.GalleryFragment"
+        android:name="co.dadm.directorio.ui.create.CreateFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_create" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="co.dadm.directorio.ui.slideshow.SlideshowFragment"
+        android:name="co.dadm.directorio.ui.update.UpdateFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_update" />
 
     <fragment
         android:id="@+id/nav_tools"
-        android:name="co.dadm.directorio.ui.tools.ToolsFragment"
+        android:name="co.dadm.directorio.ui.delete.DeleteFragment"
         android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        tools:layout="@layout/fragment_delete" />
 
     <fragment
         android:id="@+id/nav_send"
-        android:name="co.dadm.directorio.ui.send.SendFragment"
+        android:name="co.dadm.directorio.ui.query.QueryFragment"
         android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        tools:layout="@layout/fragment_query" />
 </navigation>
