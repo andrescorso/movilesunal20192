@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Directorio</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Directorio de Empresas</string>
+    <string name="nav_header_subtitle">acorso@unal.edu.co</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="home_welcome">Bienvenido</string>
+    <string name="home_welcome2">Directorio de empresas\nAndrés Corso\nReto 8</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_g_admin">Administración</string>
+    <string name="menu_g_query">Información</string>
+
+    <string name="menu_gallery">Crear</string>
+    <string name="menu_slideshow">Actualizar</string>
+    <string name="menu_tools">Eliminar</string>
+    <string name="menu_send">Consultas</string>
+</resources>
