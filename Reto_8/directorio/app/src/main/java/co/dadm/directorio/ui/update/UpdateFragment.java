@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.Html;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,15 +25,13 @@ import android.widget.SimpleCursorAdapter;
 import java.util.ArrayList;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
+
 import co.dadm.directorio.OnFragmentInteractionListener;
 import co.dadm.directorio.R;
 import co.dadm.directorio.data.EmpresasContract;
 import co.dadm.directorio.data.EmpresasDbHelper;
-import co.dadm.directorio.ui.share.UpdateFormFragment;
+import co.dadm.directorio.ui.updateForm.UpdateFormFragment;
 
 public class UpdateFragment extends Fragment {
     private CheckBox consultoria;
@@ -96,8 +93,8 @@ public class UpdateFragment extends Fragment {
                 builder.setPositiveButton(R.string.update, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
                         //dialog.dismiss();
-
-                        mListener.changeFragment(2);
+                        UpdateFormFragment.id = idDel;
+                        mListener.changeFragment();
                     }
                 });
 

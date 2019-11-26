@@ -16,6 +16,7 @@
 
     <string name="menu_gallery">Crear</string>
     <string name="menu_slideshow">Actualizar</string>
+    <string name="menu_updateF">Update Form</string>
     <string name="menu_tools">Eliminar</string>
     <string name="menu_send">Consultas</string>
 

@@ -1,17 +1,10 @@
 package co.dadm.directorio;
 
-import android.database.Cursor;
 import android.os.Bundle;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
-import android.util.Log;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.annotation.NonNull;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -23,14 +16,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 
-import co.dadm.directorio.data.EmpresasContract;
 import co.dadm.directorio.data.EmpresasDbHelper;
-import co.dadm.directorio.ui.share.UpdateFormFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener, OnFragmentInteractionListener {
 
 
+    private NavController navController;
     private AppBarConfiguration mAppBarConfiguration;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,10 +37,10 @@ public class MainActivity extends AppCompatActivity
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_tools, R.id.nav_send)
+                R.id.nav_tools, R.id.nav_send, R.id.nav_update_form)
                 .setDrawerLayout(drawer)
                 .build();
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
@@ -72,16 +64,8 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public void changeFragment(int id){
-        if (id == 2) {
-
-            Fragment fragment = new UpdateFormFragment();
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-
-            ft.replace(R.id.nav_host_fragment, fragment);
-            ft.commit();
-        }
-
+    public void changeFragment(){
+        navController.navigate(R.id.nav_update_form);
     }
 
     @Override

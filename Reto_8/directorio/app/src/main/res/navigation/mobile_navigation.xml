@@ -24,6 +24,12 @@
         tools:layout="@layout/fragment_update" />
 
     <fragment
+        android:id="@+id/nav_update_form"
+        android:name="co.dadm.directorio.ui.updateForm.UpdateFormFragment"
+        android:label="@string/menu_updateF"
+        tools:layout="@layout/fragment_update_form" />
+
+    <fragment
         android:id="@+id/nav_tools"
         android:name="co.dadm.directorio.ui.delete.DeleteFragment"
         android:label="@string/menu_tools"
