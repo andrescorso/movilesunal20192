@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Puntos de Interes</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="action_geolocate">Selecciona Lugar</string>
+    <string name="default_info_title">Localización por Default</string>
+    <string name="default_info_snippet">Sin permiso no hay lugares</string>
+
+</resources>
