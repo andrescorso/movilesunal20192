@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Peajes</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Municipios</string>
+    <string name="title_notifications">Proyecto</string>
+    <string name="linkDS">Reto 10\nUsando conjunto de datos\nCostos de Peajes\nhttps://bit.ly/2P135PR\n\nAndrés Corso</string>
+</resources>

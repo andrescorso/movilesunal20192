@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cat_array">
+        <item>Categoria I</item>
+        <item>Categoria II</item>
+        <item>Categoria III</item>
+        <item>Categoria IV</item>
+        <item>Categoria V</item>
+    </string-array>
+    <string-array name="tabla">
+        <item>Proyecto</item>
+        <item>Nombre</item>
+        <item>Precio</item>
+    </string-array>
+</resources>
