@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal" >
+    <TextView android:id="@+id/title" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:text="@string/title"
+        android:gravity="center_horizontal" android:layout_marginTop="20dp"
+        android:textSize="40sp" android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        />
+    <TextView android:id="@+id/section_radar" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:text="@string/practice"
+        android:gravity="center_horizontal" android:layout_marginTop="20dp"
+        android:textSize="30sp" android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/title"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/section_radar"
+        android:layout_marginTop="13dp"
+        android:text="Second remaining: 0"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_todraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_counter"
+        android:layout_marginTop="13dp"
+        android:text="Cat"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <co.edu.aiteaching.drawords.PaintView
+        android:id="@+id/view_paint"
+        android:layout_below="@id/txt_todraw"
+        android:layout_width="308dp"
+        android:layout_height="308dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/button_clear"
+        android:layout_below="@id/view_paint"
+        android:text="CLEAR"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textSize="30dp" />
+</RelativeLayout>

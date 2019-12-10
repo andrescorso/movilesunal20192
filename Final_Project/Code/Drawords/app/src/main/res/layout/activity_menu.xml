@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal" >
+
+    <TextView android:id="@+id/title" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:text="@string/title"
+        android:gravity="center_horizontal" android:layout_marginTop="20dp"
+        android:textSize="40sp" android:textColor="@color/colorAccent" />
+
+    <TextView android:id="@+id/question" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:text="@string/question"
+        android:gravity="center_horizontal" android:layout_marginTop="20dp"
+        android:textSize="30sp" android:textColor="@color/colorPrimaryDark" />
+
+
+    <TableLayout
+        android:id="@+id/play_grid"	android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="5dp" >
+
+    <TableRow android:gravity="center_horizontal">
+        <Button android:id="@+id/learn_button" android:layout_width="300dp"
+            android:layout_height="100dp" android:text="@string/learn"
+            android:textSize="40sp" android:onClick="showFlashcards"/>
+    </TableRow>
+        <TableRow android:gravity="center_horizontal">
+            <Button android:id="@+id/practice_button" android:layout_width="300dp"
+                android:layout_height="100dp" android:text="@string/practice"
+                android:textSize="40sp" android:onClick="showCanvas"/>
+        </TableRow>
+        <TableRow android:gravity="center_horizontal">
+            <Button android:id="@+id/progress_button" android:layout_width="300dp"
+                android:layout_height="100dp" android:text="@string/progress"
+                android:textSize="40sp" android:onClick="showProgress"/>
+        </TableRow>
+    </TableLayout>
+    <Button android:id="@+id/logout_button" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="@string/logout"
+        android:layout_marginTop="100dp" android:onClick="logoutActivity"/>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Drawords</string>
+    <string name="correct_title">Correct!!!</string>
+    <string name="correct_result">You drew the concept</string>
+    <string name="correct_ok">OK</string>
+    <string name="correct_reinforce">Reinforce</string>
+    <string name="again_title">Keep trying</string>
+    <string name="again_result">Do you want to study?</string>
+    <string name="again_ok">Hint</string>
+    <string name="again_try">Try again</string>
+    <string name="again_skip">Skip</string>
+    <string name="hint_title">Hint</string>
+    <string name="hint_result">Concept</string>
+    <string name="hint_ok">OK</string>
+
+    <string name="login">Login</string>
+
+    <string name="title">Learning Drawords</string>
+    <string name="question">What would you like to do today?</string>
+    <string name="learn">Learn</string>
+    <string name="practice">Practice</string>
+    <string name="progress">Progress</string>
+
+
+    <string name="learning">Learning Words</string>
+    <string name="practicing_label">Practicing Words</string>
+    <string name="learning_label">Learning</string>
+    <string name="menu_label">Menu</string>
+
+
+
+    <string name="word"></string>
+    <string name="category">Category: Animals</string>
+    <string name="name"></string>
+    <string name="logout">logout</string>
+
+    <string name="next_image">Next</string>
+
+    <string name="facebook_app_id">428060648068068</string>
+    <string name="fb_login_protocol_scheme">fb428060648068068</string>
+
+    <string-array name="categories_array">
+        <item>Animals</item>
+        <item>Geometric Figures</item>
+    </string-array>
+
+
+    <string name="sketch_prediction">It\'s a ... </string>
+    <string name="progress_label">Progress</string>
+</resources>

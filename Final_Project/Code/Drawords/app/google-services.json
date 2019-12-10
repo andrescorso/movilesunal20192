@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "559740491225",
+    "firebase_url": "https://drawords-bd42c.firebaseio.com",
+    "project_id": "drawords-bd42c",
+    "storage_bucket": "drawords-bd42c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559740491225:android:f4488b75fe2834c37835c8",
+        "android_client_info": {
+          "package_name": "co.edu.aiteaching.drawords"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559740491225-2qng3r4o0pm0mo8qr5fuqsudgdj4p5q8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.edu.aiteaching.drawords",
+            "certificate_hash": "a43cef66d6115cced9a195881e0601869e4e41e5"
+          }
+        },
+        {
+          "client_id": "559740491225-gp028eufe435vkplfmum9bcogka0sqbg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYPgmwNHMXK-O2ykzoCmh5iO8k_dUGqx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "559740491225-gp028eufe435vkplfmum9bcogka0sqbg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

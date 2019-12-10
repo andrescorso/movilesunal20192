@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal" >
+    <TextView android:id="@+id/title_radar" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:text="@string/title"
+        android:gravity="center_horizontal" android:layout_marginTop="20dp"
+        android:textSize="40sp" android:textColor="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        />
+    <TextView android:id="@+id/section_radar" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:text="@string/progress"
+        android:gravity="center_horizontal" android:layout_marginTop="20dp"
+        android:textSize="30sp" android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@id/title_radar"
+        />
+    <com.github.mikephil.charting.charts.RadarChart
+        android:id="@+id/radarChart"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@+id/section_radar"/>
+
+
+
+
+
+</RelativeLayout>
